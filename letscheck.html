@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="check.css">
+</head>
+<body>
+	<section class="letssee">
+		<ul>
+			<li class="list active" data-filter="all">ALL</li>
+			<li class="list" data-filter="Shirt">SHIRTS</li>
+			<li class="list" data-filter="shoes">SHOES</li>
+			<li class="list" data-filter="watch">WATCHES</li>
+			<li class="list" data-filter="jeans">JEANS</li>
+			<li class="list" data-filter="purse">PURSE</li>
+			<li class="list" data-filter="jewellary">JEWELLARY</li>
+		</ul>
+		<div class="product">
+			<div class="item" data-item="Shirt"> 
+				<img src="baby.jpg">
+				</div>
+			
+				<div class="item" data-item="shoes"> 
+				<img src="mod3.png">
+				</div>
+			
+				<div class="item" data-item="watch"> 
+				<img src="mod7.png">
+				</div>
+					
+			
+				<div class="item" data-item="jeans"> 
+				<img src="mod9.png">
+				</div>
+				
+			
+				<div class="item" data-item="purse"> 
+				<img src="mod10.png">
+				</div>
+				<div class="item" data-item="jewellary"> 
+				<img src="mod12.png">
+				</div>
+
+				<div class="item" data-item="Shirt"> 
+				<img src="baby.jpg">
+
+				</div>
+			
+				<div class="item" data-item="shoes"> 
+				<img src="mod3.png">
+				</div>
+				<div class="item" data-item="watch"> 
+				<img src="mod7.png">
+				</div>
+				<div class="item" data-item="jeans"> 
+				<img src="mod9.png">
+				</div>
+				<div class="item" data-item="purse"> 
+				<img src="mod10.png">
+				</div>
+				<div class="item" data-item="jewellary"> 
+				<img src="mod12.png">
+				</div>
+				
+
+				<div class="item" data-item="Shirt"> 
+				<img src="baby.jpg">
+				</div>
+			
+				<div class="item" data-item="shoes"> 
+				<img src="mod3.png">
+				</div>
+				<div class="item" data-item="watch"> 
+				<img src="mod7.png">
+				</div>
+				<div class="item" data-item="jeans"> 
+				<img src="mod9.png">
+				</div>
+				<div class="item" data-item="purse"> 
+				<img src="mod10.png">
+				</div>
+				<div class="item" data-item="jewellary"> 
+				<img src="mod12.png">
+				</div>
+
+
+				<div class="item" data-item="Shirt"> 
+				<img src="baby.jpg">
+				</div>
+			
+				<div class="item" data-item="shoes"> 
+				<img src="mod3.png">
+				</div>
+				<div class="item" data-item="watch"> 
+				<img src="mod7.png">
+				</div>
+				<div class="item" data-item="jeans"> 
+				<img src="mod9.png">
+				</div>
+				<div class="item" data-item="purse"> 
+				<img src="mod10.png">
+				</div>
+				<div class="item" data-item="jewellary"> 
+				<img src="mod12.png">
+				</div>
+				
+				
+		</div>
+	</section>
+	<script>
+		let list = document.querySelectorAll('.list');
+		let item = document.querySelectorAll('.item');
+
+		for(let i = 0; i < list.length; i++){
+			list[i].addEventListener('click',function(){
+				for(let j = 0; j < list.length; j++){
+					list[j].classList.remove('active');
+				}
+				this.classList.add('active');
+				let dataFilter = this.getAttribute('data-filter');
+
+				for(let k = 0; k < item.length; k++){
+					item[k].classList.remove('active');
+					item[k].classList.add('hide');
+
+					if (item[k].getAttribute('data-item') == dataFilter || dataFilter == "all") {
+						item[k].classList.remove('hide');
+						item[k].classList.add('active');
+
+					}
+				}
+
+			})
+		}
+	</script>
+
+
+</body>
+</html>

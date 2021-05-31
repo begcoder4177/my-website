@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>popup</title>
+	<link rel="stylesheet" type="text/css" href="pop.css">
+</head>
+<body>
+	<div class="popup">
+		<div class="chose">
+			<div class="close-btn"></div>
+			<div class="imgbx">
+				<img src="gift.png">
+			</div>
+			<div class="content">
+				<div>
+				<h3>Special Offer</h3>
+				<h2>Fashion Sale Flat 60<sup>%</sup><span>OFF</span><br><span>+</span><span> FREE DELIVERY</span></h2>
+				<p>Coupon Code : <B>ANTHOZOA50</B></p>
+				<p>Applicable on your first order</p>
+				<a href="#">Get the Deal</a>
+			</div>
+
+			</div>
+		</div>
+	</div>
+	<script>
+		const popup = document.querySelector('.popup');
+		const close = document.querySelector('.close-btn')
+
+		window.onload = function(){
+			setTimeout(function(){
+				popup.style.display = "block"
+			},2000)
+		}
+		close.addEventListener('click', () =>{
+			popup.style.display = "none";
+		})
+	</script>
+
+</body>
+</html>

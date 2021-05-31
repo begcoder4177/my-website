@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LogIn Page</title>
+	<link rel="stylesheet" type="text/css" href="log.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<section>
+		<div class="color"></div>
+		<div class="color"></div>
+		<div class="color"></div>
+		<div class="color"></div>
+		<div class="color"></div>
+		<div class="color"></div>
+		<div class="box">
+			<div class="square" style="--i:0;"></div>
+			<div class="square" style="--i:1;"></div>
+			<div class="square" style="--i:2;"></div>
+			<div class="square" style="--i:3;"></div>
+			<div class="square" style="--i:4;"></div>
+			<div class="container">
+				<div class="sign">
+					<span><h2>Log In</h2></span>
+					<form>
+						<div class="Inputbox">
+							<input type="text" placeholder="Username" required>
+							<i class="fa fa-user" aria-hidden="true"></i>
+						</div>
+						<div class="Inputbox">
+							<input type="password" placeholder="Password" required>
+							<i class="fa fa-lock" aria-hidden="true"></i>
+						</div>
+						<label class="remember">
+							<input type="checkbox" required>Remember Me
+						</label>
+						<div class="Inputbox">
+							<input type="submit" value="Login" required>
+							<p class="forgot">Forgot Password ?<a href="#">click here</a></p>
+							<p class="forgot">Don't have an account ?<a href="logup.html">Sign up</a></p>
+						</div>
+		
+					</form>
+				</div>
+			</div>
+		</div>
+
+	</section>
+	<script type="text/javascript" src="vanilla-tilt.js"></script>
+	<script>
+	VanillaTilt.init(document.querySelector(".container"), {
+		max: 25,
+		speed: 400
+	});
+</script>
+
+
+</body>
+</html>
